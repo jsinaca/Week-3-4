@@ -14,14 +14,14 @@
 # content-type: application/json
 
 # {
-#     "Make": "Nissan",
-#     "Model": "Rogue",
-#     "Year": 2018,
-#     "Color": "Grey",
-#     "Engine": 2.0,
-#     "Miles": 75000,
-#     "FuelType": "Gasoline",
-#     "Transmission": "CVT"
+    "Make": "Nissan",
+    "Model": "Rogue",
+    "Year": 2018,
+    "Color": "Grey",
+    "Engine": 2.0,
+    "Miles": 75000,
+    "FuelType": "Gasoline",
+    "Transmission": "CVT"
 # }
 
 # update user 

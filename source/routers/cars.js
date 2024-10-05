@@ -9,7 +9,7 @@ router.get('/:id', validateID, carController.getCar);
 
 router.post('/', carValidation(), validate, carController.createCar);
 
-router.put('./:id', validateID, carValidation(), validate, carController.updateCar);
+router.put('/:id', validateID, carValidation(), validate, carController.updateCar);
 
 router.delete('/:id', validateID, carController.deleteCar);
 
