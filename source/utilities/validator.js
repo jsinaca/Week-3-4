@@ -35,7 +35,7 @@ rules.carValidation = () => {
     return [
         body('Make').isLength({min:2, max:15}),
         body('Model').isLength({min:2, max:15}),
-        body('Year', 'Please enter a valid year (1945-2025)').notEmpty().isInt({min: 1945, max:2025}),
+        body('Year', 'Please enter a valid year (1945-2025)').if(body('Year', 'This field cannot be empty').notEmpty()).isInt({min: 1945, max:2025}),
         body('Color').notEmpty(),
         body('Engine').isFloat(),
         body('Miles').isInt(),
