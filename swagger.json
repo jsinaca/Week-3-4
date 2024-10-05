@@ -5,10 +5,9 @@
     "description": "CSE341",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "week-3-4-12k8.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
