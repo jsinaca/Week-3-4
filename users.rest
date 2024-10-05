@@ -1,0 +1,39 @@
+# GET https://cse341-project1-rjtd.onrender.com/users
+
+# GET https://cse341-project1-rjtd.onrender.com/users/66ef9f0fc39badddf1fe1cde
+
+# GET http://localhost:8080/users/66f651e5c1d655b03f613e2d4
+#send request
+# GET http://localhost:8080/users
+
+# get user 
+# GET http://localhost:8080/users/66ff9aa3a286dd3e5841d832
+
+
+# Post new user 
+# POST http://localhost:8080/users HTTP/1.1
+# content-type: application/json
+
+# {
+#     "firstName":"Juana",
+#     "lastName":"test3",
+#     "DOB": "1995-04-28",
+#     "email": "test3@test.com",
+#     "age": 29
+# }
+
+# update user 
+
+# PUT http://localhost:8080/users/6700be0740411eba25f050cf HTTP/1.1
+# content-type: application/json
+
+# {
+# 	"firstName":"Jan",
+#     "lastName":"test4",
+#     "DOB": "1998-09-17",
+#     "email": "test4@test.com",
+#     "age": 26
+# }
+
+# delete 
+# DELETE http://localhost:8080/users/6700ca1a1385375cef514c13

@@ -1,0 +1,45 @@
+# GET https://cse341-project1-rjtd.onrender.com/cars
+
+# GET https://cse341-project1-rjtd.onrender.com/cars/66ef9f0fc39badddf1fe1cde
+
+# GET http://localhost:8080/cars/66f651e5c1d655b03f613e2d4
+#send request
+# GET http://localhost:8080/cars
+
+# get user 
+GET http://localhost:8080/cars/66ff718bec1b71e2c01b1b
+
+
+# Post new user 
+# POST http://localhost:8080/cars HTTP/1.1
+# content-type: application/json
+
+# {
+#     "Make": "Nissan",
+#     "Model": "Rogue",
+#     "Year": 2018,
+#     "Color": "Grey",
+#     "Engine": 2.0,
+#     "Miles": 75000,
+#     "FuelType": "Gasoline",
+#     "Transmission": "CVT"
+# }
+
+# update user 
+
+# PUT http://localhost:8080/cars/6700e0e124a7e8fd0da4a753 HTTP/1.1
+# content-type: application/json
+
+# {
+# 	"Make": "Lexus",
+#     "Model": "CT Hatchback",
+#     "Year": 2016,
+#     "Color": "Grey",
+#     "Engine": 2.0,
+#     "Miles": 86000,
+#     "FuelType": "Gasoline",
+#     "Transmission": "CVT"
+# }
+
+# delete 
+# DELETE http://localhost:8080/cars/6700d8db50e845d1fd34ddae
