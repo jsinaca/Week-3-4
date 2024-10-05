@@ -3,12 +3,11 @@ const ObjectID = require('mongodb').ObjectId;
 const rules = {};
 
 rules.userValidation = () => {
-    // const test = body('firstName').notEmpty().isLength({min:2, max:15});
     return [
-        body('firstName').notEmpty().isLength({min:2, max:15}),
-        body('lastName').notEmpty().isLength({min:2, max:15}),
-        body('DOB').notEmpty().isDate(),
-        body('email').isEmail(),
+        body('firstName', 'Please enter your name').isLength({min:2, max:15}),
+        body('lastName', 'Please enter your lastname').isLength({min:2, max:15}),
+        body('DOB', 'Please enter a valid DOB (YYYY-MM-DD)').isDate(),
+        body('email', "Please enter a valid email").isEmail(),
         body('age').isInt()
     ]
 }
@@ -34,12 +33,12 @@ rules.validateID = (req, res, next) => {
 
 rules.carValidation = () => {
     return [
-        body('Make').notEmpty().isLength({min:2, max:15}),
-        body('Model').notEmpty().isLength({min:2, max:15}),
-        body('Year').notEmpty().isInt(),
+        body('Make').isLength({min:2, max:15}),
+        body('Model').isLength({min:2, max:15}),
+        body('Year', 'Please enter a valid year (1945-2025)').notEmpty().isInt({min: 1945, max:2025}),
         body('Color').notEmpty(),
-        body('Engine').notEmpty().isFloat(),
-        body('Miles').notEmpty().isInt(),
+        body('Engine').isFloat(),
+        body('Miles').isInt(),
         body('FuelType').notEmpty(),
         body('Transmission').notEmpty()
     ]

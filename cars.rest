@@ -2,12 +2,11 @@
 
 # GET https://cse341-project1-rjtd.onrender.com/cars/66ef9f0fc39badddf1fe1cde
 
-# GET http://localhost:8080/cars/66f651e5c1d655b03f613e2d4
-#send request
+#GET Cars
 # GET http://localhost:8080/cars
 
-# get user 
-GET http://localhost:8080/cars/66ff718bec1b71e2c01b1b
+# DET user 
+# GET http://localhost:8080/cars/66ff9ae1a286dd3e5841d833
 
 
 # Post new user 

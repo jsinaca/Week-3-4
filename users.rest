@@ -2,8 +2,8 @@
 
 # GET https://cse341-project1-rjtd.onrender.com/users/66ef9f0fc39badddf1fe1cde
 
-# GET http://localhost:8080/users/66f651e5c1d655b03f613e2d4
-#send request
+
+#GET users
 # GET http://localhost:8080/users
 
 # get user 
@@ -11,16 +11,16 @@
 
 
 # Post new user 
-# POST http://localhost:8080/users HTTP/1.1
-# content-type: application/json
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
 
-# {
-#     "firstName":"Juana",
-#     "lastName":"test3",
-#     "DOB": "1995-04-28",
-#     "email": "test3@test.com",
-#     "age": 29
-# }
+{
+    "firstName":"Peter",
+    "lastName":"Test4",
+    "DOB": "1995-06-08",
+    "email": "test3@test.com",
+    "age": 29
+}
 
 # update user 
 
