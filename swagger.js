@@ -5,8 +5,8 @@ const doc = {
         title: 'Week 3 and 4',
         description: 'CSE341'
     },
-    host: 'week-3-4-12k8.onrender.com',
-    schemes: ['https']
+    host: 'week-3-4-12k8.onrender.com', //'week-3-4-12k8.onrender.com'
+    schemes: ['http', 'https']
 }
 
 const outputFile = './swagger.json';
